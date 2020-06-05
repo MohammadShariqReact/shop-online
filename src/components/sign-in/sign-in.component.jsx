@@ -30,13 +30,14 @@ return(
                 <FormInput name='email' type='email' handleChange={this.handleChange} value={this.state.email} label="email"required/>
                    
                 <FormInput name='password' type='password' handleChange={this.handleChange} value={this.state.password} label="password" required/>
-                
+                <div className='buttons'>
                 <CustomButton type='submit' >Sign In</CustomButton>
-                <CustomButton onClick={ signInWithGoogle }>
+                <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>
                                              {' '}
                                                 SIGN IN WITH GOOGLE
                                                {' '}
                  </CustomButton>
+                 </div>
         </form>
     </div>
 )
